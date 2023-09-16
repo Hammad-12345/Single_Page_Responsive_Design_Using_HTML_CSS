@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet"
-        href="../Bootstrap5 Practice/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/faf7708005.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -16,504 +14,544 @@
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
-        }
-
-
-        div.container_section {
-            height: 550px;
-            background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 50% 100%;
-            background-blend-mode: multiply;
-            background-color: #607d8b;
-            display: flex;
-            justify-content: center;
-            background-attachment: fixed;
-            margin-bottom: 0.5rem;
-        }
-
-        div.container_section header {
-            display: flex;
-            justify-content: space-between;
-            position: fixed;
-            width: 100%;
-            background-color: #0d6efd;
-            padding: 6px 34px;
-            align-items: center;
-            z-index: 10;
-        }
-
-        div.container_section header div.img {
-
-            font-family: Raleway;
-            font-weight: 200;
-            color: #f8f9fa;
-            font-size: 18px;
-        }
-
-
-        div.container_section header #menu {
-            list-style: none;
-            display: flex;
-            padding: 0px;
-            margin: 0px;
-        }
-
-        #dropdown {
-            list-style: none;
-            position: absolute;
-            background-color: #0d6efd;
-            padding: 0;
-            margin: 0;
-        }
-
-        .displaynone {
-            display: none;
-        }
-
-        .displayflex {
-            display: block;
-        }
-
-        div.container_section header #menu li a {
-            color: #f8f9fa;
-            text-decoration: none;
-            padding: 10px 30px;
-            display: block;
-            font-weight: 100;
-            font-family: Raleway;
-            position: relative;
-        }
-
-        div.container_section header #menu li a:hover {
-            background-color: #2196f3a3;
-            color: #d1cece;
-            font-weight: 400;
-            cursor: pointer;
-        }
-
-        div.container_section header div.btnclass button {
-            background-color: #b7b7b714;
-            cursor: pointer;
-            color: #f8f9fa;
-            font-size: 16px;
-            border: none;
-            padding: 10px 27px;
-            font-weight: 600;
-            font-family: Raleway;
-        }
-
-        div.container_section header div#icon {
-            font-size: 1.5rem;
-            padding: 1px 15px;
-            display: none;
-
-
-        }
-
-        div.container_section header div.smallmenu {
-            width: 100%;
-        }
-
-        div.container_section header div.smallmenu #smallnavbar {
-            list-style: none;
-            padding: 0px;
-            margin: 0px;
-            background-color: #404040d9;
-        }
-
-        div.container_section header div.smallmenu #smallnavbar li a {
-            display: flex;
-            justify-content: center;
-            color: white;
-            text-decoration: none;
-            padding: 5px 0px;
-            text-transform: uppercase;
-            border-bottom: 1px solid white;
             font-family: inter;
         }
 
-        div.container_section header div.smallmenu #smallnavbar li a i {
-            display: block;
-            padding: 3px 5px;
-        }
-
-        div.container_section header div.smallmenu #smallnavbar li #smalldropdown {
-            list-style: none;
-            padding: 0px;
-            margin: 0px;
-
-        }
-
-        div.container_section div.container_heading_after_header_section {
-
-            width: 768px;
-            max-width: 100%;
-            color: white;
-            align-self: center;
-            /* border:1px solid black; */
-        }
-
-        div.container_section div.container_heading_after_header_section h3 {
-
-            padding: 10px 0px;
-            font-size: 3.5rem;
-            font-weight: 400;
-            font-family: Raleway;
-        }
-
-        div.container_section div.container_heading_after_header_section p {
-            font-size: larger;
-            font-family: Raleway;
-            margin-bottom: 0.5rem;
-        }
-
-        div.container_section div.container_heading_after_header_section input[type="search"] {
-            width: 60%;
-            padding: 11px 2px;
-            border: none;
-            font-size: 14px;
-            border-radius: 4px;
-
-        }
-
-        div.container_section div.container_heading_after_header_section input[type="search"]::placeholder {
-            font-size: 17px;
-        }
-
-        div.container_section div.container_heading_after_header_section input[type="search"]:focus {
-            outline: none;
-        }
-
-        div.container_section div.container_heading_after_header_section button {
-            padding: 10px 25px;
-            background-color: #0ecdb7a6;
-            border: none;
-            font-size: 15px;
-            font-weight: 600;
-            font-family: inter;
-            color: white;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-
-        .content_section {
-            max-width: 1160px;
-            /* border: 1px solid rgb(255, 255, 255); */
-            margin: 0px auto;
-            /* padding: 10px 0px; */
-            border-radius: 4px;
-            /* border:1px solid black; */
-            margin-bottom: 0.8rem;
-        }
-
-        .flexclass {
+        header {
             display: flex;
-        }
-
-        .content_section .loading {
-
-            justify-content: center;
-            gap: 2px;
-        }
-
-        .content_section .loading h3 {
-            font-family: Raleway;
-            font-weight: 400;
-        }
-
-        .content_section .loading span {
-            animation: color 1s ease-in-out infinite forwards;
-        }
-
-        @keyframes color {
-            0% {
-                background-color: white;
-            }
-
-            25% {
-                color: #607d8b;
-            }
-
-            50% {
-                color: #abe087;
-            }
-
-            75% {
-                color: #f5c31f;
-            }
-
-            100% {
-                color: #3930bb;
-            }
-
-
-        }
-        .content_section .dynamicwebsite
-        {
-            position: absolute;
-            top: 0px;
-            z-index: 11;
-            padding: 10px 0px;
-            animation: heading 2s ease-in-out infinite forwards;
-          
-          
-
-           
-        }
-        .content_section .dynamicwebsite h3
-        {
-            font-family: inter;
-            font-weight: 400;
-            font-size: 3rem;
-        }
-        @keyframes heading {
-            0%
-            {
-                top: 0px;
-                color: #3930bb;
-            }
-            /* 25%
-            {
-                top: 20px;
-                color: #607d8b;
-
-            }
-            50%
-            {
-                top:40px;
-                color: brown;
-
-            }
-            75%
-            {
-                top: 60px;
-                color:#726f6f;
-            } */
-            100%
-            {
-                top: 220px;
-                transform: translateX(35%);
-                color: #abe087;
-            }
-            
-        }
-
-
-
-        .content_section>h3 {
-            border-bottom: 1px solid black;
-            display: flex;
-            justify-content: center;
-            font-family: Raleway;
-            font-weight: 400;
-            margin-bottom: 0.6rem;
-        }
-
-        .content_section .Card_section {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 4px;
-            border-bottom: 1px solid black;
-            padding: 10px 0px;
-
-        }
-
-        /* .content_section .Card_section .card_items
-        {
-            border:1px solid black;
-        } */
-        .content_section .Card_section .card_items {
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            margin-bottom: 0.5rem;
-        }
-
-        .content_section .Card_section .card_items .card_items_img_section img {
-            width: 100%;
-            height: 250px;
-            object-fit: contain;
-        }
-
-        .content_section .Card_section .card_items .card_items_content_section {
-            padding: 5px 10px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        }
-
-        .content_section .Card_section .card_items .card_items_content_section h3 {
-            font-family: Raleway;
-            margin-bottom: 0.5rem;
-        }
-
-        .content_section .Card_section .card_items .card_items_content_section p {
-            font-family: inter;
-            margin-bottom: 0.5rem;
-        }
-
-
-
-
-
-
-        .footer {
-            background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80');
+            flex-direction: column;
+            height: 525px;
+            background-image: url('images/background-image_of_bike.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 50% 50%;
-            background-color: #726f6f;
-            background-attachment: fixed;
-            background-blend-mode: #ccc;
-            background-blend-mode: multiply;
-            display: flex;
+            row-gap: 4.5rem;
+            min-height: 100%;
+
             justify-content: center;
-            /* height: 450px; */
-            align-items: center;
 
         }
 
-        .footer .box_inside_footer {
-            width: 1160px;
+        header #navbarforsmalldevice {
+
+            display: none;
+        }
+
+
+
+
+        #header {
+            background-color: #3c483cb3;
+            background-blend-mode: hue;
+            display: flex;
+            padding: 10px 5px;
+            justify-content: space-between;
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+            background-image: url('images/background-image_of_bike.jpg');
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            align-items: center;
+
+
+
+        }
+
+        #login button {
+            padding: 7px 20px;
+            background: #505050;
+            color: white;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+
+        /* #header::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 54px;
+            background-color: hsl(0deg 0% 15%);
+            z-index: -1;
+            opacity: 0.8;
+            border-bottom: 1px;
+            border: 1px solid hsl(0deg 0% 20%);
+            left: 0px;
+        } */
+
+
+
+        #header ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+
+
+
+        #header a:hover {
+            color: rgb(190, 190, 190);
+            background-color: #3c483cb3;
+        }
+
+        #header #logo input {
+            width: 530px;
+            padding: 8px 5px;
+            background-color: hsl(0deg 0% 24%);
+            color: white;
+            border-radius: 4px;
+            opacity: 0.9;
+            border: none;
+        }
+
+
+
+
+        #header #logo input::placeholder {
+            color: rgb(226, 221, 221);
+        }
+
+        #header #logo input:focus {
+            outline: none;
+        }
+
+        #header #logo button {
+            padding: 8px 25px;
+            background-color: hsl(120deg 1% 30%);
+            border: none;
+            color: hsl(0deg 0% 100%);
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: 600;
+
+        }
+
+
+
+        #header a {
+            text-decoration: none;
+            padding: 10px 10px;
+            color: white;
+            display: block;
+        }
+
+
+        .displayheadercontentflex {
+            padding: 0px 16px;
+            font-size: 4.5rem;
+            font-weight: 600;
+            color: white;
+            width: 600px;
+            flex-direction: column;
+            align-items: flex-start;
+            /* text-align: center; */
+            /* border:1px solid black; */
+
+            display: flex;
+            animation: headercontent 2s ease-in 2.2s forwards;
+            /* border: 1px solid black; */
+
+        }
+
+        @keyframes headercontent {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+
+
+        }
+
+
+        #headercontent button {
+            padding: 12px 35px;
+            background: #f44336;
+            color: white;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .displaynoneclass {
+            display: none;
+        }
+
+        #contentsectionndsidebar {
+            display: flex;
+            justify-content: center;
+
+        }
+
+
+        #contentsection {
+            display: flex;
+            width: 1168px;
+            max-width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 8px;
+            margin-bottom: 1.5rem;
+            margin-top: 1.5rem;
+
+
+        }
+
+        .section {
+            width: 32%;
+            height: auto;
+            box-shadow: 0px 0px 10px;
+            /* padding: 1px 8px; */
+            cursor: pointer;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            transition-delay: 0.5s;
+
+
+        }
+
+        .section:hover {
+            transform: scale(1.1, 1.1);
+
+        }
+
+        .image h3 {
+            color: white;
+            visibility: hidden;
+
+
+        }
+
+        .section:hover .image {
+            background-color: #524f4f;
+            background-blend-mode: overlay;
+            /* animation: image 2s ease-in-out 1s forwards; */
+
+
+
+
+
+        }
+
+        /* @keyframes image {
+            100% {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        } */
+
+        .section:hover .image h3 {
+
+            animation: heading 1s ease-in 0.8s forwards;
+
+
+        }
+
+        @keyframes heading {
+            0% {}
+
+            100% {
+                visibility: visible;
+                transform: translate(130px, 80px) rotate(360deg);
+
+
+
+            }
+
+        }
+
+        .image {
+
+            display: flex;
+            align-items: flex-start;
+        }
+
+
+
+
+
+        #image1 {
+            width: 100%;
+            height: 200px;
+            background-image: url('./images/adventure.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+
+        }
+
+
+        #image2 {
+            width: 100%;
+            height: 200px;
+            background-image: url('./images/yamaha_mt07_naked_bike.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+
+        }
+
+        #image3 {
+            width: 100%;
+            height: 200px;
+            background-image: url('./images/fireblade_rrr_sportsbike.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+
+        }
+
+        #image4 {
+            width: 100%;
+            height: 200px;
+            background-image: url('./images/bmw_r1250rt_tourer.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+
+        }
+
+        #image5 {
+            width: 100%;
+            height: 200px;
+            background-image: url('./images/kawasaki_ninja_1000sx_sports_tourer.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+
+        }
+
+        #image6 {
+            width: 100%;
+            height: 200px;
+            background-image: url('./images/honda_crf450l_dual_sport_bike.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+
+        }
+
+        #image7 {
+            width: 100%;
+            height: 200px;
+            background-image: url('./images/triumph_t120_classic_bike.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+
+        }
+
+        #image8 {
+            width: 100%;
+            height: 200px;
+            background-image: url('./images/ktm_450_sxf_factory_offroad_bike.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+
+        }
+
+        #image9 {
+            width: 100%;
+            height: 200px;
+            background-image: url('./images/honda_pcx125_scooter.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+
+        }
+
+        .fordescription {
+            box-shadow: 0px 0px 5px;
+            padding: 4px 8px;
+            border-radius: 2px;
+
+        }
+
+        #footersection {
+            background-color: #141515;
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        #footerinsidemainbox {
+
+            width: 1168px;
             max-width: 100%;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            font-family: Raleway;
-            font-weight: 600;
-            gap: 4px;
+            margin-bottom: 0.5rem;
+            margin-top: 0.5rem;
+
+        }
+
+        .sectionfooter {
+            width: 32%;
             color: white;
-            /* border:1px solid black; */
-
+            font-weight: 200;
+            padding: 15px 10px;
         }
 
 
 
 
-
-
-
-        .footer .sectionfooter {
-            padding: 45px 10px;
-            flex: 290px;
-        }
-
-        .footer .sectionfooter h3 {
+        #aboutusection h3,
+        #contactus h3,
+        #icons h3 {
             margin-bottom: 0.8rem;
         }
 
 
 
-        .footer .sectionfooter:nth-of-type(2) ul {
+
+        #contactus ul {
             list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
         }
 
-        .footer .sectionfooter:nth-of-type(3) ul {
+        #contactus ul li {
+            padding: 5px 0px;
+        }
 
+
+
+        #icons ul {
+            display: flex;
             list-style: none;
-            display: flex;
-            gap: 5px;
-
+            column-gap: 4px;
         }
 
-        .footer .sectionfooter:nth-of-type(3) ul li {
-
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-
-        .footer .sectionfooter:nth-of-type(3) ul li:hover {
-            background-color: #d1cece;
-            color: black;
+        #icons ul li {
+            padding: 5px 15px;
+            background-color: hsl(0deg 0% 10%);
             border-radius: 4px;
+            cursor: pointer;
+
         }
 
 
+        #smallmenu {
+            width: 100%;
+            border-top: 2px solid hsl(0deg 0% 10%);
+            ;
+        }
 
+        #smallmenu ul {
+            list-style: none;
+            display: flex;
 
+        }
 
+        #smallmenu ul li a {
+            color: white;
+            font-weight: 200;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
 
-
-
-
-
-        @media screen and (min-width:992px) {
-
-            div.container_section header div.smallmenu {
-                display: none;
-            }
+        #smallmenu ul li a:hover {
+            background-color: #524f4f;
+            color: rgb(191, 191, 192);
         }
 
         @media screen and (max-width:992px) {
-
-            div.container_section header #menu,
-            .btnclass {
+            #header {
                 display: none;
             }
 
-            div.container_section header div#icon {
+            header {
+                flex-direction: row;
+                justify-content: space-between;
+                row-gap: 0px;
+                align-items: center;
+
+            }
+
+            header #navbarforsmalldevice {
+                display: flex;
+                flex-direction: column;
+                align-self: flex-start;
+                align-items: center;
+
+
+            }
+
+            header #navbarforsmalldevice ul {
+                display: flex;
+                list-style: none;
+                flex-direction: column;
+                background-color: #1415158c;
+                /* display: none; */
+                width: 140px;
+
+            }
+
+            header #navbarforsmalldevice ul li a {
+                color: white;
                 display: block;
-            }
+                text-decoration: none;
+                padding: 10px 5px;
 
-            div.container_section header {
-                flex-wrap: wrap;
-            }
-
-            div.container_section header div#icon i {
-                cursor: pointer;
-            }
-
-        }
-
-        @media screen and (max-width:768px) {
-            div.container_section div.container_heading_after_header_section {
-                text-align: center;
-            }
-
-            .footer .sectionfooter {
-                flex: 100%;
-                text-align: center;
-                padding: 45px 0px;
-            }
-
-            .footer .sectionfooter:nth-of-type(3) ul {
-                justify-content: center;
-            }
-
-            .content_section .about_us_card_section,
-            .content_section .front_end_section_main .Front_end_cards_section,
-            .content_section .back_end_section_main .back_end_card_section {
-                grid-template-columns: 1fr;
 
             }
 
+            /* header #navbarforsmalldevice #icon{
+                border:1px solid black;
 
+            } */
+            
 
-            div.container_section div.container_heading_after_header_section h3 {
-                font-size: 2rem;
-            }
+            .displayheadercontentflex {
+                font-size: 2.5rem;
+                width: 370px;
 
-            div.container_section div.container_heading_after_header_section p {
-                font-size: medium;
             }
 
         }
 
-        @media screen and (max-width:568px) {
-
-
-
-
-            div.container_section div.container_heading_after_header_section h3 {
-                font-size: 1.9rem;
+        @media screen and (max-width:786px) {
+            .section {
+                width: 49%;
             }
 
-            div.container_section div.container_heading_after_header_section p {
-                font-size: medium;
+            .sectionfooter {
+                width: 49%;
             }
 
+        }
 
+        @media screen and (max-width:576px) {
+            .section {
+                width: 99%;
+            }
+
+            .sectionfooter {
+                width: 99%;
+            }
+
+            .displayheadercontentflex {
+                font-size: 1.8rem;
+                width: 320px;
+
+            }
+            header #navbarforsmalldevice ul
+            {
+                width: 140px;
+            }
 
         }
     </style>
@@ -521,88 +559,205 @@
 
 <body>
 
-    <div class="container_section">
-        <header>
-            <div class="img">
-                <i class="fa-sharp fa-solid fa-code"></i> Coding
-            </div>
 
-            <ul id="menu">
-
-                <li id="services">
-                    <a id="dropdownmenu">Services <i class='fa-solid fa-caret-up'></i>
-                    </a>
-                    <ul id="dropdown" class="displaynone">
-                        <li><a class="buttons" id="Frontend">Front end</a></li>
-                        <li><a class="buttons" id="Backend">Back end</a></li>
-
-                    </ul>
-                </li>
-                <li><a class="buttons" id="Aboutprogramming">Programming</a></li>
+    <nav id="header">
 
 
+        <ul>
+
+            <li><a href="">Adventure</a></li>
+            <li><a href="">Cruiser</a></li>
+            <li><a href="">Naked</a></li>
+            <li><a href="">Sportsbike</a></li>
+            <li><a href="">Tourer</a></li>
+            <li><a href="">Sports Tourer</a></li>
+            <li><a href="">Dual Sport</a></li>
+            <li><a href="">Classic</a></li>
+            <li><a href="">Off-road</a></li>
+            <li><a href="">Scooter</a></li>
+        </ul>
+
+        <div id="login">
+            <button> <i class="fa-solid fa-user"></i> Log in</button>
+
+        </div>
+
+
+
+    </nav>
+    <header>
+
+
+
+
+
+        <!-- <div id="logo">
+                <input type="search" placeholder="search">
+                <button>Search</button>
+
+            </div> -->
+
+
+
+
+        <div id="headercontent" class="displaynoneclass">
+
+
+        </div>
+
+        <nav id="navbarforsmalldevice">
+          
+
+            <ul>
+                <li><a href="">Adventure</a></li>
+                <li><a href="">Cruiser</a></li>
+                <li><a href="">Naked</a></li>
+                <li><a href="">Sportsbike</a></li>
+                <li><a href="">Tourer</a></li>
+                <li><a href="">Sports Tourer</a></li>
+                <li><a href="">Dual Sport</a></li>
+                <li><a href="">Classic</a></li>
+                <li><a href="">Off-road</a></li>
+                <li><a href="">Scooter</a></li>
             </ul>
-            <div class="btnclass">
-                <button>sign up</button>
-                <button>log in</button>
-            </div>
-            <div id="icon">
-                <i class="fa-solid fa-list" id="list_dropdown"></i>
+        </nav>
+
+
+
+    </header>
+
+    <div id="contentsectionndsidebar">
+
+        <section id="contentsection">
+
+            <div id="section1" class="section">
+                <div id="image1" class="image">
+
+
+                    <h3> adventure</h3>
+
+
+
+                </div>
+                <div class="fordescription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum molestiae, temporibus labore facere
+                    adipisci eligendi voluptatibus sapiente aliquam, assumenda ullam ipsum a, dolorem animi accusamus!
+                </div>
 
             </div>
 
-            <div class="smallmenu displaynone">
-                <ul id="smallnavbar">
-                    <li id="smallscreendropdown">
-                        <a id="servicesmallscreendropdown">Services <i class='fa-solid fa-caret-up'></i></a>
-                        <ul id="smalldropdown" class="displaynone">
-                            <li><a class="buttons" id="Frontend">Frond end</a></li>
-                            <li><a class="buttons" id="Backend">Back end</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="buttons" id="Aboutprogramming">Progarmming</a></li>
-                </ul>
+            <div id="section2" class="section">
+                <div id="image2" class="image">
+                    <h3>
+                        Naked
+                    </h3>
+
+
+                </div>
+                <div class="fordescription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum molestiae, temporibus labore facere
+                    adipisci eligendi voluptatibus sapiente aliquam, assumenda ullam ipsum a, dolorem animi accusamus!
+
+                </div>
+
             </div>
-        </header>
 
-        <div class="container_heading_after_header_section">
-            <h3>Building Beautiful Website</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut obcaecati reiciendis dolore esse commodi
-                architecto voluptate accusamus id dolorem non inventore quia voluptatem itaque rem, quidem quos
-                dicta?
-                Similique, quasi.</p>
-            <input type="search" placeholder="search">
-            <button>Search</button>
-        </div>
+            <div id="section3" class="section">
+                <div id="image3" class="image">
+                    <h3>sportsbike</h3>
 
 
-        <!-- practice of display grid in css -->
+                </div>
+                <div class="fordescription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum molestiae, temporibus labore facere
+                    adipisci eligendi voluptatibus sapiente aliquam, assumenda ullam ipsum a, dolorem animi accusamus!
+                </div>
+
+            </div>
+
+            <div id="section4" class="section">
+                <div id="image4" class="image">
+                    <h3>tourer</h3>
 
 
+                </div>
+                <div class="fordescription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum molestiae, temporibus labore facere
+                    adipisci eligendi voluptatibus sapiente aliquam, assumenda ullam ipsum a, dolorem animi accusamus!
+                </div>
+
+            </div>
+
+
+            <div id="section5" class="section">
+                <div id="image5" class="image">
+                    <h3>sports tourer</h3>
+
+
+                </div>
+                <div class="fordescription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum molestiae, temporibus labore facere
+                    adipisci eligendi voluptatibus sapiente aliquam, assumenda ullam ipsum a, dolorem animi accusamus!
+                </div>
+
+            </div>
+
+            <div id="section6" class="section">
+                <div id="image6" class="image">
+                    <h3>sport bike</h3>
+
+
+                </div>
+                <div class="fordescription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum molestiae, temporibus labore facere
+                    adipisci eligendi voluptatibus sapiente aliquam, assumenda ullam ipsum a, dolorem animi accusamus!
+                </div>
+
+            </div>
+            <div id="section7" class="section">
+                <div id="image7" class="image">
+                    <h3>classic</h3>
+
+
+                </div>
+                <div class="fordescription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum molestiae, temporibus labore facere
+                    adipisci eligendi voluptatibus sapiente aliquam, assumenda ullam ipsum a, dolorem animi accusamus!
+                </div>
+
+            </div>
+            <div id="section8" class="section">
+                <div id="image8" class="image">
+                    <h3>offroad</h3>
+
+
+                </div>
+                <div class="fordescription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum molestiae, temporibus labore facere
+                    adipisci eligendi voluptatibus sapiente aliquam, assumenda ullam ipsum a, dolorem animi accusamus!
+                </div>
+
+            </div>
+            <div id="section9" class="section">
+                <div id="image9" class="image">
+                    <h3>scooter</h3>
+
+
+                </div>
+                <div class="fordescription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum molestiae, temporibus labore facere
+                    adipisci eligendi voluptatibus sapiente aliquam, assumenda ullam ipsum a, dolorem animi accusamus!
+                </div>
+
+            </div>
+
+        </section>
 
     </div>
 
-    <div class="content_section">
+    <div id="footersection">
+        <div id="footerinsidemainbox">
 
-        <div class="loading flexclass">
-            <h3>Loading <span>
-                    <i class="fa-regular fa-circle-dot"></i>
-                    <i class="fa-regular fa-circle-dot"></i>
-                    <i class="fa-regular fa-circle-dot"></i>
-                </span>
-            </h3>
-        </div>
-
-
-        <div class="dynamicwebsite"><h3>Welcome to Dynamic website</h3></div>
-
-
-
-
-    </div>
-
-    <div class="footer">
-        <div class="box_inside_footer">
             <div id="aboutusection" class="sectionfooter">
                 <h3>About</h3>
                 <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus reprehenderit corporis non
@@ -618,7 +773,7 @@
                         h/8 islamabad</li>
                     <li><i class="fa-solid fa-envelope"></i> mh176316@gmail.com</li>
                     <li><i class="fa-solid fa-phone"></i> 03155707151</li>
-                    <li><i class="fa-brands fa-skype"></i> live:.cid. 4ee1d40eba933700</li>
+                    <li><i class="fa-brands fa-skype"></i> live:.cid.4ee1d40eba933700</li>
                 </ul>
             </div>
 
@@ -633,276 +788,79 @@
                 </ul>
             </div>
 
-            <div class="copyright sectionfooter">
-                Copyright © 2023 Meta Platforms, Inc.
+            <div id="smallmenu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Contact us</a></li>
+
+                </ul>
             </div>
-
-            <div class="logo sectionfooter">
-                <i class="fa-sharp fa-solid fa-code"></i> Coding
-            </div>
-
-
-
-
         </div>
+
 
 
 
     </div>
 
-<div>Hello update1</div>
- <div>Hello update2</div>
- <div>Hello update3</div>
- <div>Hello Update4</div>
-
-
-
-
-
-
-
-
-
 
 
 
     <script>
-        const services = document.getElementById("services");
-        services.addEventListener('mouseover', function () {
-            const dropdownmenu = document.getElementById('dropdownmenu')
-            dropdownmenu.innerHTML = "Services <i class='fa-solid fa-caret-down'></i>"
-            const dropdown = document.getElementById("dropdown");
-            dropdown.classList.remove('displaynone')
-            dropdown.classList.add('displayflex')
+
+        const Building = ["B", "u", "i", "l", "d", "i", "n", "g"]
+        const Bikes = [" B", "i", "k", "e", "s"];
+        const Website = ["  W", "e", "b", "s", "i", "t", "e"]
+        window.addEventListener('load', function () {
+            setTimeout(() => {
+                const headercontent = document.getElementById('headercontent')
+                headercontent.classList.remove('displaynoneclass')
+                headercontent.classList.add('displayheadercontentflex');
+
+
+                console.log(headercontent)
+                setTimeout(() => {
+                    Building.forEach((element, index) => {
+
+                        document.getElementById("headercontent").innerHTML += element
+
+                    });
+                }, 500)
+
+                setTimeout(() => {
+                    Bikes.forEach((element, index) => {
+
+                        document.getElementById("headercontent").innerHTML += element
+
+                    });
+                }, 1000)
+
+                setTimeout(() => {
+                    Website.forEach((element, index) => {
+
+                        document.getElementById("headercontent").innerHTML += element
+
+                    });
+                }, 1500)
+
+                setTimeout(() => {
+                    const button = document.createElement('button');
+                    button.innerText = 'sign up';
+                    headercontent.append(button);
+
+                }, 2000);
+
+
+
+
+
+
+
+
+
+
+            }, 1000)
         })
-        const mouseleave = document.getElementById("services")
-        mouseleave.addEventListener('mouseout', function () {
-            const dropdownmenu = document.getElementById('dropdownmenu')
-            dropdownmenu.innerHTML = "Services <i class='fa-solid fa-caret-up'></i></a>"
-            const dropdown = document.getElementById("dropdown");
-            dropdown.classList.add('displaynone')
-            dropdown.classList.remove('displayflex')
-        })
-
-        let showservices = document.getElementById('smallscreendropdown')
-        showservices.addEventListener('click', function () {
-            const getservice = document.getElementById('servicesmallscreendropdown')
-
-            const servicedropdown = document.getElementById('smalldropdown')
-            const getdisplay = window.getComputedStyle(servicedropdown).display;
-            getdisplay == 'none' ? (servicedropdown.classList.add('displayflex'), getservice.innerHTML = "Services <i class='fa-solid fa-caret-down'></i>") : (servicedropdown.classList.remove('displayflex'), getservice.innerHTML = "Services <i class='fa-solid fa-caret-up'></i>");
-        })
-        const listdropdown = document.getElementById('list_dropdown');
-        listdropdown.addEventListener('click', function () {
-            const smallmenubar = document.querySelectorAll('.smallmenu')
-            console.log(smallmenubar[0])
-            const getdisplay = window.getComputedStyle(smallmenubar[0]).display;
-            getdisplay == 'none' ? smallmenubar[0].classList.add('displayflex') : smallmenubar[0].classList.remove('displayflex')
-        })
-
-
-        const data_from_api = [
-
-            {
-                Category: 'Aboutprogramming',
-                img: 'https://www.logo.wine/a/logo/C%2B%2B/C%2B%2B-Logo.wine.svg',
-                Tech_name: 'C++',
-                Tech_language_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem excepturi expedita tempora veritatis inventore? Maiores eaque ratione quidem ducimus dolore.'
-
-            },
-            {
-                Category: 'Aboutprogramming',
-                img: 'https://www.logo.wine/a/logo/Java_(programming_language)/Java_(programming_language)-Logo.wine.svg',
-                Tech_name: 'Java',
-                Tech_language_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem excepturi expedita tempora veritatis inventore? Maiores eaque ratione quidem ducimus dolore.'
-            },
-            {
-                Category: 'Aboutprogramming',
-                img: 'https://images.squarespace-cdn.com/content/v1/5df7d8d44b9a7a49b2e475ac/1576527226630-U5RF6R7GVLFM3H4KSGHW/csharp5.png?format=300w',
-                Tech_name: 'C#',
-                Tech_language_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem excepturi expedita tempora veritatis inventore? Maiores eaque ratione quidem ducimus dolore.'
-            }
-            , {
-                Category: 'Frontend',
-                img: 'https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg',
-                Tech_name: 'HTML',
-                Tech_language_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem excepturi expedita tempora veritatis inventore? Maiores eaque ratione quidem ducimus dolore.'
-
-
-            },
-            {
-                Category: 'Frontend',
-                img: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg',
-                Tech_name: 'CSS',
-                Tech_language_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem excepturi expedita tempora veritatis inventore? Maiores eaque ratione quidem ducimus dolore.'
-
-
-            },
-            {
-                Category: 'Frontend',
-                img: 'https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png',
-                Tech_name: 'JAVASCRIPT',
-                Tech_language_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem excepturi expedita tempora veritatis inventore? Maiores eaque ratione quidem ducimus dolore.'
-
-
-            },
-            {
-                Category: 'Frontend',
-                img: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',
-                Tech_name: 'REACT JS',
-                Tech_language_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem excepturi expedita tempora veritatis inventore? Maiores eaque ratione quidem ducimus dolore.'
-
-
-            },
-            {
-                Category: 'Frontend',
-                img: 'https://angular.io/assets/images/logos/angular/angular.svg',
-                Tech_name: 'ANGULAR JS',
-                Tech_language_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem excepturi expedita tempora veritatis inventore? Maiores eaque ratione quidem ducimus dolore.'
-
-
-            },
-            {
-                Category: 'Frontend',
-                img: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg',
-                Tech_name: 'VUE JS',
-                Tech_language_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem excepturi expedita tempora veritatis inventore? Maiores eaque ratione quidem ducimus dolore.'
-
-
-            },
-            {
-                Category: 'Backend',
-                img: 'https://cdn.freebiesupply.com/logos/large/2x/nodejs-1-logo-png-transparent.png',
-                Tech_name: 'NODE JS',
-                Tech_language_description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil saepe quaerat unde incidunt repudiandae cum illo fugit ea repellat cupiditate.'
-
-            },
-            {
-                Category: 'Backend',
-                img: 'https://www.php.net//images/logos/new-php-logo.svg',
-                Tech_name: 'PHP',
-                Tech_language_description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil saepe quaerat unde incidunt repudiandae cum illo fugit ea repellat cupiditate.'
-
-            },
-            {
-                Category: 'Backend',
-                img: 'https://logodownload.org/wp-content/uploads/2019/10/python-logo-0.png',
-                Tech_name: 'PYTHON',
-                Tech_language_description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil saepe quaerat unde incidunt repudiandae cum illo fugit ea repellat cupiditate.'
-
-            },
-
-
-
-
-
-
-        ];
-
-        setTimeout(() => {
-            document.querySelector('.loading').classList.add('displaynone')
-            document.querySelector('.loading').classList.remove('flexclass')
-            document.querySelector('.dynamicwebsite').classList.add('displaynone')
-
-        }, 2700);
-
-
-
-
-
-
-
-
-
-        const content_section = document.querySelector('.content_section');
-        setTimeout(() => {
-            const Aboutprogrammingdata = data_from_api.filter(function (filterdata) {
-                return filterdata.Category === 'Aboutprogramming'
-            })
-            const h3 = document.createElement('h3');
-            h3.innerHTML = 'About Programming';
-            const Programing_content = document.createElement('div');
-            Programing_content.setAttribute('class', 'Card_section')
-            content_section.append(h3, Programing_content);
-
-
-            Aboutprogrammingdata.forEach(function (Programmingdata) {
-                const card_items = document.createElement('div');
-                card_items.setAttribute('class', 'card_items')
-                Programing_content.append(card_items)
-                const card_items_img = document.createElement('div');
-                card_items_img.setAttribute('class', 'card_items_img_section')
-                card_items.append(card_items_img)
-                const img = document.createElement('img');
-                img.setAttribute('src', Programmingdata.img);
-                card_items_img.append(img)
-                const card_items_content = document.createElement('div');
-                card_items_content.setAttribute('class', 'card_items_content_section')
-                card_items.append(card_items_content)
-                const Category = document.createElement('h3');
-                Category.innerHTML = Programmingdata.Category
-                const heading = document.createElement('h3');
-                heading.innerHTML = Programmingdata.Tech_name
-                const paragraph = document.createElement('p');
-                paragraph.innerHTML = Programmingdata.Tech_language_description
-                card_items_content.append(Category, heading, paragraph)
-
-
-
-
-            })
-
-        }, 3000)
-
-        let menuclicking = document.querySelectorAll('.buttons');
-        console.log("menuclicking");
-
-
-        menuclicking.forEach(function (menuitems) {
-
-            menuitems.addEventListener('click', function () {
-            
-                content_section.innerHTML = '';
-                const saveID = this.id
-                const h3 = document.createElement('h3');
-                h3.innerHTML = saveID;
-                const Programing_content = document.createElement('div');
-                Programing_content.setAttribute('class', 'Card_section')
-                content_section.append(h3, Programing_content);
-
-                const fetch_data_filtering = data_from_api.filter(function (fetchingdata) {
-                    return fetchingdata.Category === saveID
-                })
-                
-                fetch_data_filtering.forEach(function (datarendering) {
-                    const card_items = document.createElement('div');
-                    card_items.setAttribute('class', 'card_items')
-                    Programing_content.append(card_items)
-                    const card_items_img = document.createElement('div');
-                    card_items_img.setAttribute('class', 'card_items_img_section')
-                    card_items.append(card_items_img)
-                    const img = document.createElement('img');
-                    img.setAttribute('src', datarendering.img);
-                    card_items_img.append(img)
-                    const card_items_content = document.createElement('div');
-                    card_items_content.setAttribute('class', 'card_items_content_section')
-                    card_items.append(card_items_content)
-                    const Category = document.createElement('h3');
-                    Category.innerHTML = datarendering.Category
-                    const heading = document.createElement('h3');
-                    heading.innerHTML = datarendering.Tech_name
-                    const paragraph = document.createElement('p');
-                    paragraph.innerHTML = datarendering.Tech_language_description
-                    card_items_content.append(Category, heading, paragraph)
-
-                })
-            })
-        })
-
-
-
-
-
 
 
 
